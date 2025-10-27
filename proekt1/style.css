@@ -1,0 +1,612 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,800;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+ body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+    background: #000000;
+ }
+
+ a {
+    text-decoration: none;
+ }
+ 
+ img {
+    max-width: 100%;
+
+
+ }
+ .wrapper {
+background: #000000;
+background: linear-gradient(0deg, #E47500, #010101);
+width: 100%;
+overflow-x: hidden;
+
+ }
+ .container {
+    width: 1400px;
+    margin: 0 auto;
+
+ }
+
+ header {
+    padding: 50px 0;
+
+ }
+ header .logo, footer .blocks .logo {
+    text-transform: uppercase;
+    font-size: 29;
+    font-weight: 800;
+ }
+
+ header nav {
+    float:right;
+    width: 50%;
+
+ }
+ 
+ header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+
+ }
+
+ header nav ul li {
+    display: inline-block;
+
+ }
+  header nav ul li.active::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: #DC7000;
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+    left: -15px;
+
+  }
+  header nav ul li a {
+    color:#fff
+
+}
+header nav ul li:not(.active):not(.btn) a:hover{
+    border-bottom: 5px solid #DC7000;
+    transition: all 500ms ease
+
+}
+
+header nav ul li.btn a,.input-with-button button{
+    background: #FA9021;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+header nav ul li.btn a:hover, .input-with-button button {
+    background: #4d1901;
+}
+
+.hero {
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.hero--info {
+    width: 530px;
+    padding-top: 70px;
+
+}
+
+.hero--info h2{
+    color: #E87D0E;
+    font-size:20px;
+    font-weight: 600;
+
+}
+
+.hero--info h1{
+    font-size:50px;
+    font-weight: 600;
+    
+}
+
+.hero--info p{
+    font-weight: 500;
+    line-height: 170%;
+    margin: 30px 0;
+}
+
+.hero--info .btn, .hero-about .info .btn {
+background: #FA8305;
+border-radius:50px ;
+color: #fff;
+padding: 15px 30px;
+border: 0;
+transition: all 500ms ease;
+font-size: 17px;
+}
+.hero--info .btn:hover, .hero-about .info .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hero img {
+    position: absolute;
+    top: -175px;
+    right: 0;
+
+}
+
+/* секция с играми */
+
+.trending{
+    top: 50px;
+}
+.trending h3{
+    font-weight: 600;
+    font-size: 31px;
+
+}
+
+.trending .see-all, .projects .see-all {
+    color: #fff;
+    background: #25211d ;
+    padding: 12px 23px;
+    float: right;
+    display: block;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+.trending .see-all:hover, .projects .see-all:hover {
+    transform: scale(1.1);
+
+}
+
+.games {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    padding: 50px 0;
+}
+
+.block {
+    flex: 1; /* Равномерное распределение пространства */
+    max-width: 250px; /* Ограничение максимальной ширины карточки */
+    padding: 60px; /* Если есть внутренние отступы */
+}
+
+.games span{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+
+}
+.games span img {
+    position: relative;
+    top: 5px;
+    margin-right: 7px;
+}
+
+.big-text {
+    padding: 50px 0;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    width: 800px;
+}
+
+.banner {
+    padding: 80px 0;
+
+}
+
+.banner h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+
+}
+
+.banner p {
+    line-height: 170%;
+    margin-bottom: 30px;
+    width: 550px;
+}
+
+.banner img{
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+
+/* секция с фото */
+
+.features {
+    background: url(img/bg.png) no-repeat center center fixed;
+    background-size: cover;
+    padding: 80px 0;
+}
+.features p,
+.features h3{
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features h3{
+    font-size: 30px;
+}
+
+.features .info {
+     display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    gap: 60px;
+}
+.feature-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    justify-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+.feature-row:nth-child(2) {
+    grid-template-columns: repeat(2, 1fr);
+    max-width:725px;
+}
+
+.features .info .block {
+     text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.features .info .block img{
+    margin-bottom: 15px;
+}
+
+.projects {
+    padding: 100px 0;
+
+}
+
+.projects h3{
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.projects p{
+    margin: 40px 0;
+    text-align: center;
+}
+
+.projects .images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.projects .see-all{
+    float: none;
+    width: 60px;
+    margin-top:60px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+/* нижняя часть */
+
+.email {
+    padding-bottom: 120px;
+}
+
+.email h3 {
+    margin-top: 60px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.email p {
+    text-align: center;
+}
+
+.email .block {
+    background: #1C140F;
+    margin: 30px auto 0 auto;
+    border-radius: 10px;
+    padding: 40px 3%;
+    width: 94%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.email-text h4 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.email-text p {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    margin: 0;
+}
+
+.input-with-button {
+    position: relative;
+    display: inline-block;
+}
+
+.input-with-button input {
+    padding: 12px 120px 12px 15px;
+    border: none;
+    border-radius: 5px;
+    width: 350px;
+    font-size: 1rem;
+}
+
+.input-with-button button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #DC7000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    height: calc(100% - 10px);
+    transition: all 0.3s ease; /* Плавный переход */
+}
+
+/* Hover эффекты */
+.input-with-button button:hover {
+    background: #4d1901; /* Темнее при наведении */
+    transform: translateY(-50%) scale(1.02); /* Легкое увеличение */
+}
+
+.input-with-button button:active {
+    background: #4d1901; /* Еще темнее при клике */
+    transform: translateY(-50%) scale(0.98); /* Легкое уменьшение */
+}
+
+/* страница про нас */
+
+.hero-about{
+    position: relative;
+}
+.hero-about .info{
+    width: 500px;
+    padding: 250px 0;
+}
+.hero-about .info h1 {
+    margin-bottom: 15px;
+    font-size: 30px;
+
+}
+
+.hero-about .info .btn{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.hero-about img{
+    position:absolute;
+    right: -65px;
+    top: 30px;
+
+}
+
+.work {
+    padding: 80px 0;
+}
+
+.work h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.work .blocks{
+    display: flex;
+    justify-content: space-between;
+}
+.work .blocks .block {
+    width: 25%;
+    border-radius: 10px;
+    padding: 50px 70px;
+    background: #1C140F;
+
+}
+.work .blocks .block h3{
+    font-size: 20px;
+    margin: 20px 0;
+}
+.work .blocks .block .badge {
+    border-radius: 7px;
+    padding: 10px 20px;
+    top: -50px;
+}
+.work .blocks .block .badge.purple {
+    background: #B000DC;
+    opacity: 80%;
+}
+.work .blocks .block .badge.brown {
+background: #DC4200;
+opacity: 80%;
+}
+.work .blocks .block .badge.green{
+background: #00DC8D;
+opacity: 80%;
+}
+
+
+/* footer */
+
+footer {
+    background: #000000;
+    padding: 50px 0;
+
+}
+
+footer .blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .blocks p {
+    width: 300px;
+    margin: 15px 0;
+
+}
+
+footer .blocks h4{
+    font-weight: 500;
+    font-size: 17px;
+
+}
+footer .blocks ul{
+    list-style: none;
+    
+}
+footer .blocks ul li{
+    margin-top: 7px;
+    opacity: 0.8;
+
+}
+
+footer hr{
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background: #ccc;
+
+}
+
+footer > p {
+    text-align: center;
+}
+
+
+/* контакты */
+
+.hero-contacts h1{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-size: 33px;
+
+
+}
+
+.hero-contacts p {
+    text-align: center;
+}
+
+.hero-contacts img {
+    width: 70%;
+    margin: 80px 15%;
+
+}
+
+
+.feedback {
+    padding: 70px 0;
+    background: #1C140F;
+}
+
+.feedback h2{
+    text-align: center;
+    font-weight: 500;
+    font-size:30px;
+     
+}
+.feedback p{
+    text-align: center;
+    margin-top: 10px;
+}
+.feedback form{
+    margin: 80px auto;
+    width: 600px;
+}
+
+.feedback form .inline {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.feedback form .inline > div {
+    width: 50%;
+
+}
+
+.feedback form label {
+    color: #4F4F4F;
+    font-size: 14px;
+}
+
+.feedback form input,
+.feedback form textarea {
+    background:#2c2420;
+    border-radius: 10px;
+    border: 0.6 solid #CECECE;
+    display: block;
+    width: 90%;
+    padding: 15px 10px;
+    outline: none;
+    color: #Fff;
+    margin-top: 7px;
+    margin-bottom: 20px;
+
+}
+
+.feedback form .one-line {
+    width: 96%;
+
+
+}
+.feedback form textarea{
+    resize: none;
+    height: 200px;
+}
+
+.feedback form button {
+    background: #DC7000;
+    border-radius: 5px;
+    border: 0;
+    float: right;
+    cursor: pointer;
+    color: #fff;
+    padding: 15px 35px;
+    transition: all 500ms ease;
+}
+.feedback form button:hover {
+    background: #ab1111;
+}
+
+
