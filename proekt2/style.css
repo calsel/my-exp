@@ -1,0 +1,654 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+:root {
+  --black: #311f09;
+  --orange: #ff8a00;
+  --green: #3fa72f;
+  --white-orange: #ffe6c9;
+  --grey: #d0ccc7;
+}
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1237px;
+  margin: 0px auto;
+}
+
+/* header */
+
+header {
+  margin-top: 51px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content__last {
+  align-items: center;
+  display: flex;
+}
+.header-content__last img {
+  margin-right: 25px;
+}
+
+.header-content__last a:last-of-type {
+  background-color: var(--green);
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 34px;
+  border-radius: 133px;
+  transition: background-color 500ms ease;
+}
+
+.header-content__last a:last-of-type:hover {
+  background-color: var(--orange);
+}
+
+nav a {
+  text-decoration: none;
+  margin-right: 45px;
+  color: var(--black);
+  transition: all 500ms ease;
+  display: inline-block;
+}
+
+nav a:hover {
+  color: var(--green);
+  transform: scale(1.1);
+}
+
+nav a:last-of-type {
+  margin-right: 0;
+}
+
+nav a.active {
+  color: var(--orange);
+}
+
+/* main */
+main {
+  margin-top: 166px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-content__about {
+  color: var(--orange);
+  background-color: var(--white-orange);
+  padding: 10px 34px;
+  border-radius: 126px;
+  display: inline-block;
+
+  margin-bottom: 22px;
+}
+
+.main-content h1 {
+  color: var(--black);
+  font-size: 80px;
+  font-family: "Raleway", sans-serif;
+  line-height: 110%;
+  font-weight: 700;
+
+  margin-bottom: 30px;
+}
+
+.main-content p {
+  line-height: 200%;
+  margin-bottom: 77px;
+  color: var(--black);
+}
+
+.main-content__buttons a:first-of-type {
+  padding: 17px 62px;
+  background-color: var(--orange);
+  border-radius: 162px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 23px;
+  display: inline-block;
+
+  transition: transform 0.4s ease;
+}
+
+.main-content__buttons a:last-of-type {
+  padding: 17px 55px;
+  background-color: var(--green);
+  border-radius: 162px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 23px;
+
+  transition: transform 0.4s ease;
+  display: inline-block;
+}
+
+.main-content__buttons a:hover {
+  transform: scale(1.1);
+}
+
+.main-content__buttons a:hover {
+  transform: scale(1.1);
+}
+
+/* section welcome */
+
+.welcome {
+  background-color: rgba(63, 198, 110, 0.1);
+  padding-top: 147px;
+  padding-bottom: 132px;
+}
+
+.welcome-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome-inner h2 {
+  font-family: "Tinos", serif;
+  font-weight: 800;
+  line-height: 110%;
+  font-size: 80px;
+  margin-bottom: 80px;
+}
+.welcome-inner h2 span {
+  color: var(--orange);
+}
+.welcome-inner p {
+  color: #5c4529;
+  line-height: 200%;
+  margin-bottom: 100px;
+}
+
+.welcome-inner a {
+  padding: 17px 62px;
+  background-color: var(--orange);
+  border-radius: 162px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 23px;
+
+  display: inline-block;
+
+  transition: transform 0.4s ease;
+}
+
+.welcome-inner a:hover {
+  transform: scale(1.1);
+}
+
+/* меню */
+
+/* меню */
+.menu {
+  padding-top: 164px;
+  padding-bottom: 201px;
+}
+
+.menu h2 {
+  font-family: "Tinos", serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 200%;
+  color: var(--black);
+  margin-bottom: 60px;
+}
+
+.menu-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.menu-buttons a {
+  background-color: rgba(208, 204, 199, 0.1);
+  color: var(--black);
+  font-size: 20px;
+  text-decoration: none;
+  padding: 17px 64px;
+  border-radius: 162px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-buttons a:hover {
+  background-color: var(--orange);
+}
+
+.menu-buttons .checked {
+  background-color: var(--black);
+  color: #fff;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch; /* важно: растягиваем элементы */
+  margin-bottom: 88px;
+}
+
+.menu-item {
+  width: 32%;
+  background-color: rgba(208, 204, 199, 0.1);
+  border-radius: 70px;
+  text-align: center;
+  padding: 35px 29px;
+  margin-bottom: 40px;
+  display: flex; /* делаем flex-контейнером */
+  flex-direction: column;
+  height: auto; /* автоматическая высота */
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px; /* фиксированная высота изображений */
+  object-fit: contain; /* чтобы изображения не искажались */
+  margin-bottom: 20px;
+}
+
+.menu-item h3 {
+  margin: 0 0 15px 0;
+  min-height: 60px; /* увеличиваем высоту для заголовков */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+/* Исправляем опечатку в классе рейтинга */
+.menu-item__raiting {
+  margin-bottom: 20px;
+  min-height: 30px; /* фиксированная высота для рейтинга */
+}
+
+.menu-item__raiting img {
+  width: 20px;
+  height: 20px;
+  margin: 0 2px;
+}
+
+.menu-item p {
+  flex-grow: 1; /* чтобы параграфы занимали оставшееся пространство */
+  margin-bottom: 25px;
+  line-height: 1.6;
+  min-height: 80px; /* минимальная высота для текста */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-item__last {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto; /* прижимаем к низу */
+}
+
+.menu-item__last-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--black);
+  margin: 0;
+}
+
+.menu-item__last a {
+  background-color: var(--orange);
+  color: white;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.menu-item__last a:hover {
+  background-color: var(--green);
+  transform: scale(1.05);
+}
+
+.menu-pag {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* добавляем выравнивание по центру */
+  gap: 15px; /* равные отступы между элементами */
+  margin-top: 30px;
+}
+
+.menu-pag a {
+  text-decoration: none;
+  display: flex; /* используем flex для центрирования */
+  align-items: center;
+  justify-content: center;
+}
+
+.back,
+.next,
+.page,
+.dot {
+  background-color: var(--black);
+  border-radius: 15px;
+  height: 55px;
+  width: 55px;
+  color: #fff;
+  display: flex; /* центрируем содержимое */
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.back span,
+.next span,
+.page span,
+.dot span {
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 1; /* убираем лишние отступы */
+}
+
+.page {
+  background-color: rgba(255, 138, 0, 0.1);
+}
+
+.page span {
+  color: var(--orange);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.dot {
+  background-color: transparent; /* убираем фон для точек */
+  width: auto; /* автоматическая ширина */
+}
+
+.dot span {
+  color: var(--black);
+  font-size: 16px;
+}
+
+/* Стили для активной страницы (если нужно) */
+.page.active {
+  background-color: var(--orange);
+}
+
+.page.active span {
+  color: white;
+}
+
+/* Ховер эффекты */
+.back:hover,
+.next:hover {
+  background-color: var(--orange);
+}
+
+.page:hover {
+  background-color: var(--orange);
+}
+
+.page:hover span {
+  color: white;
+}
+
+/* reserve */
+
+.reserve {
+  padding-top: 113px;
+  padding-bottom: 39px;
+  background: rgba(255, 244, 231, 0.4);
+}
+
+.reserve .container {
+  max-width: 1466px;
+  margin-right: 120px;
+}
+
+.reserve-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reserve-left {
+  margin-left: -180px;
+}
+
+.reserve-right {
+  margin-left: 103px;
+}
+
+.reserve-right h2 {
+  font-family: "Tinos", serif;
+  font-size: 80px;
+  line-height: 110%;
+  font-weight: 800;
+  margin-bottom: 50px;
+  color: var(--black);
+}
+
+.reserve-right h2 span {
+  color: var(--orange);
+}
+
+.reserve-right p {
+  font-weight: 400;
+  line-height: 200%;
+  margin-bottom: 132px;
+}
+
+.reserve-right a {
+  padding: 17px 55px;
+  border-radius: 162px;
+  background-color: var(--orange);
+  color: #fff;
+  text-decoration: none;
+}
+
+.reserve-right a:hover {
+  background-color: var(--green);
+}
+
+.reserve-right img {
+}
+
+/* chefs */
+.chefs {
+  padding-top: 175px;
+  padding-bottom: 271px;
+  text-align: center;
+}
+
+.chefs h2 {
+  font-family: "Tinos", serif;
+  font-weight: 800;
+  line-height: 200%;
+  font-size: 80px;
+  margin-bottom: 135px;
+  text-align: center;
+}
+
+.chefs-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+  gap: 100px;
+}
+
+.chef-item h3 {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 200%;
+  color: var(--black);
+  margin-top: 40px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.chef-item p {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 200%;
+  color: #a08d76;
+  text-align: center;
+}
+
+.chefs-all {
+  background-color: var(--orange);
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  padding: 17px 78px;
+  border-radius: 162px;
+  transition: all 500ms ease;
+}
+
+.chefs-all:hover {
+  background-color: var(--green);
+  transform: scale(1.1);
+}
+
+/* clients */
+
+.clients {
+  background-color: rgba(208, 204, 199, 0.1);
+  padding: 71px 0px 99px 0px;
+}
+.clients-inner {
+  background-image: url(/proekt2/img/Round.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+
+.clients-title {
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 200%;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.clients-about-img {
+  margin-bottom: 40px;
+
+}
+.clients-about-title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 200%;
+  color:var(--black)
+
+}
+
+.clients-about-text {
+  color: #5C4529;
+  font-size: 20px;
+  line-height: 200%;
+  margin-bottom: 65px;
+
+}
+
+.clients-about-inner {
+  position: relative;
+  
+}
+
+.clients-about-inner p{
+color:#5C4529;
+font-size: 20px;
+line-height: 200%;
+
+}
+
+#dot1 {
+      position: relative;
+    top: -80px;
+    left: -620px;
+    transform: rotate(180deg);
+}
+#dot2 {
+      position: relative;
+    top: 0;
+    left: 600px;
+}
+/* footer */
+
+footer {
+    background: #311F09;
+    padding: 50px 0;
+
+}
+
+footer .blocks {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+footer .blocks p {
+    width: 300px;
+    margin: 15px 0;
+    color:#FFf
+
+}
+
+footer .blocks h4{
+    font-weight: 500;
+    font-size: 17px;
+
+}
+footer .blocks ul{
+    list-style: none;
+    
+}
+footer .blocks ul li{
+    margin-top: 7px;
+    opacity: 0.8;
+
+}
+
+footer hr{
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background: #ccc;
+
+}
+
+footer > p {
+    text-align: center;
+    color:#fff
+}
+
+
+
