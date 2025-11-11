@@ -18,11 +18,11 @@
     --size: #{rem(24)};
 
     @include square(var(--size));
-    background: url(./icons/star_gray.svg) no-repeat center/contain;
+    background: url(../icons/star_gray.svg) no-repeat center/contain;
 
 
     &.is-active {
-      background-image: url(https://raw.githubusercontent.com/calsel/my-exp/refs/heads/main/icons/star_yellow.svg);
+      background-image: url(../icons/star_gray.svg);
 
     }
 
@@ -33,4 +33,5 @@
       --size: #{rem(20)};
     }
   }
+
 }
