@@ -1602,10 +1602,10 @@ button[aria-label]::before {
   --size: 1.5rem;
   width: var(--size);
   height: var(--size);
-  background: url(./icons/star_gray.svg) no-repeat center/contain;
+  background: url(../icons/star_gray.svg) no-repeat center/contain;
 }
 .rating-view__star.is-active {
-  background-image: url(https://raw.githubusercontent.com/calsel/my-exp/refs/heads/main/icons/star_yellow.svg);
+  background-image: url(../icons/star_yellow.svg);
 }
 @media (width <= 90.06125rem) {
   .rating-view__star {
