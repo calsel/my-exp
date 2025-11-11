@@ -881,7 +881,7 @@ button[aria-label]::before {
     width: var(--100vw);
     margin-left: calc(var(--container-padding-x) * -1);
     padding: 6.25rem 2.5rem 2.5rem;
-    background-image: url("/img/resources-preview/bg_tablet.png");
+    background-image: url("./img/resources-preview/bg_tablet.png");
     background-size: contain;
   }
 }
@@ -1602,10 +1602,10 @@ button[aria-label]::before {
   --size: 1.5rem;
   width: var(--size);
   height: var(--size);
-  background: url(../../icons/star_gray.svg) no-repeat center/contain;
+  background: url(../icons/star_gray.svg) no-repeat center/contain;
 }
 .rating-view__star.is-active {
-  background-image: url(../../icons/star_yellow.svg);
+  background-image: url(../icons/star_yellow.svg);
 }
 @media (width <= 90.06125rem) {
   .rating-view__star {
