@@ -1,0 +1,38 @@
+@use 'normalize';
+@use 'fonts';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+
+@use 'blocks/icon';
+@use 'blocks/logo';
+@use 'blocks/button';
+@use 'blocks/burger-button';
+@use 'blocks/header';
+@use 'blocks/badge';
+@use 'blocks/socials';
+@use 'blocks/footer';
+@use 'blocks/hero';
+@use 'blocks/advantage-card';
+@use 'blocks/team';
+@use 'blocks/metrics';
+@use 'blocks/resources-preview';
+@use 'blocks/tag';
+@use 'blocks/tile';
+@use 'blocks/section';
+@use 'blocks/card';
+@use 'blocks/list';
+@use 'blocks/tab';
+@use 'blocks/person-card';
+@use 'blocks/blog-actions';
+@use 'blocks/blog-card';
+@use 'blocks/download-info';
+
+
+.header,
+main > *:not(:last-child),
+.footer {
+    display: none !important;
+
+    }
+
